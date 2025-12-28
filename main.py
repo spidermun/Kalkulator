@@ -1,2 +1,2 @@
-import kalkulator
-import pamiec
+from kalkulator import Kalkulator
+from pamiec import Pamiec
