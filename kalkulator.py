@@ -1,7 +1,4 @@
 class Kalkulator:
-    def __init__(self):
-        pass
-
     def dodawanie(self, a: float, b: float) -> float:
         return a + b
 
