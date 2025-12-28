@@ -30,8 +30,9 @@ def main():
 
         elif wybor == "h":
             for h in pamiec.dane:
-                print(h)
+                print(f"{h['a']} {h['op']} {h['b']} = {h['wynik']}")
             continue
+
 
         elif wybor not in op:
             print("nie prawidlowy operator")
