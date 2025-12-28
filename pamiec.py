@@ -12,6 +12,8 @@ class Pamiec:
                 self.dane = json.load(file)
         except FileNotFoundError:
             self.dane = []
+        except json.JSONDecodeError:
+            self.dane = []
 
     def zapis(self, nowy_wpis):
         self.dane.append(nowy_wpis)

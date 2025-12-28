@@ -29,10 +29,12 @@ def main():
             break
 
         elif wybor == "h":
-            for h in pamiec.dane:
-                print(f"{h['a']} {h['op']} {h['b']} = {h['wynik']}")
+            if pamiec.dane == []:
+                print("puste")
+            else:
+                for h in pamiec.dane:
+                    print(f"{h['a']} {h['op']} {h['b']} = {h['wynik']}")
             continue
-
 
         elif wybor not in op:
             print("nie prawidlowy operator")
@@ -43,6 +45,7 @@ def main():
             a = float(input("Podaj a: "))
             b = float(input("Podaj b: "))
             wynik = op[wybor](a, b)
+
         except ValueError as e:
             print(f"Blad: {e}")
             continue
