@@ -10,7 +10,7 @@ class Kalkulator:
 
     def dzielenie(self, a: float, b: float) -> float:
         if b == 0:
-            raise  ValueError("nie dziel przez zero jasna ch...")
+            raise  ValueError("nie dziel przez zero")
         return a / b
 
 
