@@ -12,3 +12,5 @@ class Kalkulator:
         if b == 0:
             raise  ValueError("nie dziel przez zero jasna ch...")
         return a / b
+
+

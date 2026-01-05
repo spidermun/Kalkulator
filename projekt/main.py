@@ -1,4 +1,4 @@
-from kalkulator import Kalkulator
+from projekt.kalkulator import Kalkulator
 from pamiec import Pamiec
 
 def wpis(a, b, wybor, wynik):
