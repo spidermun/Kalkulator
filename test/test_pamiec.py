@@ -49,3 +49,4 @@ def test_zapis_pisze_do_pliku(tmp_path):
     zapisane = json.loads(sciezka.read_text(encoding="utf-8"))
 
     assert zapisane == [{"a": 7.0, "b": 3.0, "op": "*", "wynik": 21.0}]
+
